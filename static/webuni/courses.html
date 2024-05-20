@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Maktab</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="webuni, education, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<nav style="display: flex; justify-content: center; align-items: center;">
+    <div class="container-fluid" style="display: flex; justify-content: center; align-items: center; width: 100%;">
+      <a class="navbar-brand" style="display: flex; justify-content: center;" href="{% url 'users:home' %}">
+        <img src="img/logo.png" height="15%" width="10%" class="d-inline-block align-top" alt=""></a>
+    </div>
+</nav>	
+<body>
+	<h2 style="text-align: center; padding-top: 30px; font-weight: bold;"> Here you can discover different kinds of courses that we have in our platform </h2>
+	<!-- course section -->
+	<section class="course-section">
+		<div class="course-warp">
+			<ul class="course-filter controls">
+				<li class="control active" data-filter="all">All</li>
+				<li class="control" data-filter=".math">Math</li>
+				<li class="control" data-filter=".design">Design</li>
+				<li class="control" data-filter=".web">Web Development</li>
+				<li class="control" data-filter=".science">Science</li>
+			</ul>                                       
+			<div class="row course-items-area">
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 design">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/1.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Art & Crafts</h5>
+								<p>Discover your creative potential with our Arts & Crafts course! Whether you're a beginner or an experiences artist, explore a variety of techniques in painting, drawing, sculpting, and more. Our hands-on classes provide expert guidance to unleash your imagination and create beautiful, personalized art pieces. Join us to develop new skills, express yourself artistically, and enjoy a vibrant community of fellow art enthusiasts.</p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								<p>John Smith, <span style="color: rgb(0, 115, 255);">Artist</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 web">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/2.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>IT Development</h5>
+								<p>Embark on a dynamic journey into the world of IT development. From foundational programming concepts to advanced software engineering principles, our course covers everything you need to build applications and websites. Gain experience in coding languages such as Python, JavaScript, and Java. Whether you're aiming to launch a career in tech or enhance your programming skills, our course will help you with that</p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/2.jpg"></div>
+								<p>William Parker, <span style="color: rgb(0, 115, 255);">Developer</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 design">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/3.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Graphic Design</h5>
+								<p>Discover your creativity with our Graphic Design course! Dive into the fundamentals of visual communication, typography, and layout design. Learn industry-standard tools like Adobe Photoshop, Illustrator, and InDesign as you explore the principles of color theory and composition. Our classes and projects will empower you to craft compelling logos, posters, and digital illustrations. Join us to turn your passion for design into a profession.</p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/3.jpg"></div>
+								<p>Sofia Turner, <span style="color: rgb(0, 115, 255);">Designer</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 math">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/4.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Mathematics</h5>
+								<p>Explore the world of Mathematics through our course! From foundational concepts to advanced problem-solving techniques, delve into areas such as algebra, calculus, and geometry. Our interactive classes offer a blend of theoretical knowledge and practical applications, designed to strengthen your analytical thinking and mathematical reasoning skills. Our course provides a solid foundation for lifelong learning and mathematical discovery</p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/4.jpg"></div>
+								<p>Hailey Rhode, <span style="color: rgb(0, 115, 255);">Math teacher</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 finance">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/5.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>History</h5>
+								<p>Join our History course. From ancient civilizations to modern revolutions, explore pivotal events, influential figures, and cultural developments that have shaped our world. Engage in lively discussions, analyze primary sources, and gain insights into the complexities of historical interpretation. Whether you're passionate about understanding the past or seeking to grasp its impact on the present, our course offers a rich tapestry of knowledge and critical thinking skills to illuminate the story of humanity.</p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/5.jpg"></div>
+								<p>Selena Gomez, <span style="color: rgb(0, 115, 255);">Historian</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 science">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/6.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Science</h5>
+								<p>Delve into fundamental principles across disciplines such as biology, chemistry, physics, and environmental science. Through hands-on experiments, interactive demonstrations, and in-depth discussions, uncover the mysteries of life, matter, energy, and the environment. Whether you're curious about the cosmos or passionate about solving real-world problems, our course offers a solid foundation in scientific inquiry and critical thinking skills essential for understanding and navigating our ever-evolving universe.</p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/6.jpg"></div>
+								<p>Justin Bieber, <span style="color: rgb(0, 115, 255);">Scientist</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 ">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/7.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>English</h5>
+								<p>Embark on a rewarding journey to fluency with our English Language Learning course. Designed for learners of all levels, from beginners to advanced speakers, our immersive program focuses on practical communication skills, grammar essentials, vocabulary expansion. Engage in interactive lessons, conversation practice, and real-life simulations to build confidence in speaking, listening, reading, and writing English.</p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/7.jpg"></div>
+								<p>Ariana Grande, <span style="color: rgb(0, 115, 255);">English teacher</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-3 col-md-4 col-sm-6 science">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="img/courses/8.jpg">
+							<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Geography</h5>
+								<p>Explore of the world's diverse landscapes, cultures, and environments with our Geography course. From understanding Earth's physical features to examining human geography and global issues, delve into topics such as climate change, urbanization, and geopolitical dynamics. Through interactive maps, fieldwork opportunities, and insightful discussions, gain a deep understanding of spatial relationships and the interconnectedness of societies. </p>
+								<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+							</div>
+							<div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/8.jpg"></div>
+								<p>William Parker, <span style="color: rgb(0, 115, 255);">Developer</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="featured-courses">
+				<div class="featured-course course-item">
+					<div class="course-thumb set-bg" data-setbg="img/courses/f-1.jpg">
+						<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 offset-lg-6 pl-0">
+							<div class="course-info">
+								<div class="course-text">
+									<div class="fet-note" style="background-color: rgb(0, 115, 255);">Featured Course</div>
+									<h5>Algebra</h5>
+									<p>Master algebra's core concepts swiftly with our concise course. Explore equations, functions, and problem-solving strategies, gaining confidence in foundational algebraic principles.</p>
+									<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+									<p>William Parker, <span style="color: rgb(0, 115, 255);">Developer</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-course course-item">
+					<div class="course-thumb set-bg" data-setbg="img/courses/f-2.jpg">
+						<div class="price" style="background-color: rgb(58, 185, 29);">Free</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 pr-0">
+							<div class="course-info">
+								<div class="course-text">
+									<div class="fet-note" style="background-color: rgb(0, 115, 255);">Featured Course</div>
+									<h5>HTML5 & CSS For Beginners</h5>
+									<p>Jumpstart your web development journey with our beginner-friendly HTML5 & CSS course. Learn the essentials of creating stylish and functional websites, from structuring content with HTML5 to styling with CSS. Build practical skills through hands-on projects and unleash your creativity in designing responsive web pages</p>
+									<div class="students" style="color: rgb(0, 115, 255);">120 Students</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/2.jpg"></div>
+									<p>William Parker, <span style="color: rgb(0, 115, 255);">Developer</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- course section end -->
+
+
+	<!-- footer section -->
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+				<div class="row">
+					<div class="widget-item">
+						<h4>Newsletter</h4>
+						<form class="footer-newslatter">
+							<input type="email" placeholder="E-mail">
+							<button class="btn btn-info">Subscribe</button>
+							<p>*We don’t spam</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-warp">
+				<ul class="footer-menu">
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Privacy</a></li>
+				</ul>
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="WebUni Education Template">
+    <meta name="keywords" content="webuni, education, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+
+        	<!-- Favicon -->
+	  <link href="{% static 'webuni/img/favicon.png' %}" rel="shortcut icon"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+    <!-- As a heading -->
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static 'img/logo.png' %}" height="30" width="30" class="d-inline-block align-top" alt=""> MAKTAB
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item" style="padding-left: 500px;">
+                <a class="nav-link" href="{% url 'home' %}" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}" style="color: white;">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}" style="color: white;">Contact</a>
+            </li>
+        </ul>
+        <a href="{% url 'users:register' %}" type="button" class="btn btn-danger navbar-btn" style="border-radius: 20px; padding: 10px 20px; font-size: 16px;">SIGN UP</a>
+    </div>
+  </div>
+  </nav>
+
+ <!-- First Body -->
+
+ <div class="container" style="display: flex; align-items: center;">
+  <div class="row">
+      <img src="{% static 'img/about.jpg' %}" alt="" style="width: 380px; height: auto; margin-top: 80px; margin-bottom: 50px; margin-left: 50px; margin-right: 50px;">
+    </div>
+    <div class="col-md-6">
+      <h2 style="color:black; font-weight: bold;">ABOUT</h2>
+      <p style="color:black;">Maktab is your one-stop destination for personalized learning tailored to your academic journey. With Maktab, students can seamlessly navigate through a variety of school subjects, selecting their grade level and desired subjects to embark on an enriching learning experience.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second body -->
+
+<div class="container" style="display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center;">
+  <div class="image" style="flex: 1;">
+    <img src="{% static 'img/found.jpg' %}" style="width: 380px; height: auto; margin-top: 80px; margin-bottom: 50px; margin-left: 50px; margin-right: 50px;" alt="">
+  </div>
+  <div class="text" style="flex: 1; padding: 0 20px;">
+    <h2 style="color:black; font-weight: bold;">FOUNDED BY</h2>
+    <p style="color: black; font-weight: bold;">This application is founded by an MDIST student Butaboeva Malika. A dissertation work for bachelors</p>
+  </div>
+</div>
+
+
+  <!-- Footer Section -->
+  <div class="blockcode">
+    <footer class="page-footer navbar shadow" style="background-color: #ffa841; color: white;">
+      <div class="d-flex flex-column mx-auto" style="width: 80%">
+        <div class="d-flex flex-wrap justify-content-between">
+            <div>
+              <p class="my-3 line display-6" href="{% url 'users:register' %}" type="button">
+              START LEARNING
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="my-3 line display-6" style="color:rgb(245, 193, 60);">
+                TODAY
+                </p>
+                  <span class="mt-4 ml-auto" style="margin-left: 600px;">
+                    <button class="btn btn-flat p-2" style="color:white; background-color:transparent; border-color: transparent;">
+                    <i class="fab fa-telegram fa-2x"></i>
+                    </button>
+                    <button class="btn btn-flat p-2" style="color:white; background-color:transparent; border-color: transparent;">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </button>
+                    <button class="btn btn-flat p-2" style="color:white; background-color:transparent; border-color: transparent;">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </button>
+                  </span>
+              </div>
+              <h6 class="mt-5">
+                <i class="fas fa-envelope"></i> malika.butaboeva@gmail.com
+              </h6>
+            </div>
+      </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    color: orange;
+}
+#bg{
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.navbar{
+    display: flex;
+    background-color: orange;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    padding-left: 100px;
+    
+}
+
+ /* .orange-container {
+    background-color: rgba(255, 165, 0, 0.5);
+    color: white;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px; 
+
+} */
+
+
+form{
+    width: 40%;
+    background-color: rgba(255, 166, 0, 0.626);
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 50%;
+}
+
+.signup{
+    padding-top: 20px;
+
+}
+
+#login{
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+}
+
+nav ul {
+    width: 150px;
+}
+nav ul li {
+    float: left;
+ }

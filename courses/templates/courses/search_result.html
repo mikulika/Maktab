@@ -1,0 +1,78 @@
+<!doctype html>
+{% load crispy_forms_tags %}
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="description" content="WebUni Education Template">
+    <meta name="keywords" content="webuni, education, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maktab</title>
+    	<!-- Favicon -->
+	  <link href="{% static 'webuni/img/favicon.png' %}" rel="shortcut icon"/>
+
+    	<!-- Google Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body>
+
+{% block content %}
+
+<section class="page-info-section set-bg" data-setbg="{% static 'webuni/img/page-top-bg.jpg'%}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <br><br>
+        <br>
+        <br><br>
+        <br>
+        <form method="post" action="{% url 'courses:search_course' %}" class="intro-newslatter"> {% csrf_token %}
+          <input name="search" type="text" placeholder="Search for the course">
+          <button type="submit" class="site-btn">Search for the course</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+    <h1 class=" mt-2 text-center">Search results ({{ results|length }}):</h1>
+    <div class="row course-items-area">
+        <!-- course -->
+        {% if results %}
+        {% for lesson in results %}
+        <div class="mix col-lg-4 col-md-4 col-sm-6 finance">
+          <div class="course-item">
+              <a href="/courses/{{ lesson.lenda.slug }}/">
+            <div class="course-thumb set-bg" data-setbg="{% static 'webuni/img/courses/4.jpg' %}">
+              <iframe width="100%" height="290" src="https://www.youtube.com/embed/{{ lesson.video_id }}?controls=0"  frameborder="0" controls allowfullscreen></iframe>  
+              
+            </div>
+            <div class="course-info">
+              <div class="course-text">
+                <h5>{{ lesson.title }}</h5>
+                <p>{{ lesson.subject }}</p>
+                <div class="students">Class 10</div>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        
+        {% else %}
+        <div class="text-center">
+            <h4>There are no results.</h4>
+        </div>
+        {% endif %}
+        <!-- course -->
+      </div>
+</div>
+
+
+
+{% endblock %}

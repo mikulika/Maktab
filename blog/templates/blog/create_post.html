@@ -1,0 +1,44 @@
+<!doctype html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="description" content="WebUni Education Template">
+    <meta name="keywords" content="webuni, education, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maktab</title>
+    	<!-- Favicon -->
+	  <link href="{% static 'webuni/img/favicon.png' %}" rel="shortcut icon"/>
+
+    	<!-- Google Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+      
+      <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body style="background-image: url('{%static '/img/index_background.png'%}');">
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="text-center">
+        <h1 style="color: white; padding-top: 20px;">Create a post</h1>
+    </div>
+    <form style="width: 600px; background-color: rgba(255, 255, 255, 0.37); padding: 30px; margin-top: 10%; margin-bottom: 20px; margin-left: 30%; box-sizing: border-box; color: white;" method="post">
+        {% csrf_token %}
+        <label for="">Title*</label>
+        <input type="text" class="form-control" name="title" placeholder="Post title...">
+        <label for="">Post*</label>
+        <textarea class="form-control" name="text" id="" cols="30" rows="10" placeholder="Post content..."></textarea>
+        <br>
+        <button class="site-btn">Create the post</button>
+    </form>
+
+</div>
+<br>
+{% endblock %}

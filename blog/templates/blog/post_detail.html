@@ -1,0 +1,54 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="description" content="WebUni Education Template">
+    <meta name="keywords" content="webuni, education, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maktab</title>
+    	<!-- Favicon -->
+	  <link href="{% static 'webuni/img/favicon.png' %}" rel="shortcut icon"/>
+
+    	<!-- Google Fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+      
+      <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body style="background-image: url('{%static '/img/index_background.png'%}');">
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row" style="color: white;">
+      <div class="col-lg-9">
+          <h1>Post details: </h1>
+        <!-- blog post -->
+        <div class="blog-post">
+          <img src="img/blog/1.jpg" alt="">
+          <h3>{{ post.title }}</h3>
+          <div class="blog-metas">
+            <div class="blog-meta author">
+              <div class="post-author set-bg" data-setbg="/media/{{ post.author.profile.profile_pic }}"></div>
+              <a href="#">{{ post.author|capfirst }}</a>
+            </div>
+            <div class="blog-meta">
+              <a href="#">{{ post.created_date }}</a>
+            </div>
+          </div>
+          <p>{{ post.text|capfirst }} </p>
+          <a href="/blog/" class="btn btn-dark">Return</a>
+          {% if post.author == request.user %}
+          <a href="/blog/{{ post.id }}/delete" class="btn btn-danger">Delete Post</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock content %}
